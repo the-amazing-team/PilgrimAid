@@ -1,6 +1,8 @@
 import { IonContent, IonHeader, IonPage, IonToolbar } from "@ionic/react";
 import BackArrow from "../../assets/chevron_left_thin.png";
 import ProfilePicture from "../../assets/profile.png";
+import NaviationPanel from "../../components/NavigationPanel";
+
 
 const Profile: React.FC = () => {
   return (
@@ -31,49 +33,41 @@ const Profile: React.FC = () => {
           </div>
         </div>
         <div className="flex border p-5">
-            <div className="flex-1 font-bold">
-                Name
-            </div>
-            <div className="flex-1">
-                Sophia Silverhand
-            </div>
+          <div className="flex-1 font-bold">Name</div>
+          <div className="flex-1">Sophia Silverhand</div>
         </div>
         <div className="flex border p-5">
-            <div className="flex-1 font-bold">
-                Username
-            </div>
-            <div className="flex-1">
-                @sophiasilverhand
-            </div>
+          <div className="flex-1 font-bold">Username</div>
+          <div className="flex-1">@sophiasilverhand</div>
         </div>
         <div className="flex border p-5">
-            <div className="flex-1 font-bold">
-                Email
-            </div>
-            <div className="flex-1">
-                sophia@gmail.com
-            </div>
+          <div className="flex-1 font-bold">Email</div>
+          <div className="flex-1">sophia@gmail.com</div>
         </div>
         <div className="flex border p-5">
-            <div className="flex-1 font-bold">
-                Links
+          <div className="flex-1 font-bold">Links</div>
+          <div className="flex-1 flex flex-col gap-3">
+            <div className="text-blue-800 cursor-pointer">sophia.com</div>
+            <div className="text-blue-800 cursor-pointer">
+              mylink.net/sophia
             </div>
-            <div className="flex-1 flex flex-col gap-3">
-                <div className="text-blue-800 cursor-pointer">sophia.com</div>
-                <div className="text-blue-800 cursor-pointer">mylink.net/sophia</div>
-                <div className="text-blue-800 cursor-pointer">youtube.com/sophia</div>
-                <div className="text-gray-400 p-2 rounded-lg cursor-pointer hover:bg-gray-100 w-fit">+ Add link</div>
+            <div className="text-blue-800 cursor-pointer">
+              youtube.com/sophia
             </div>
+            <div className="text-gray-400 p-2 rounded-lg cursor-pointer hover:bg-gray-100 w-fit">
+              + Add link
+            </div>
+          </div>
         </div>
         <div className="flex border p-5">
-            <div className="flex-1 font-bold">
-                Bio
-            </div>
-            <div className="flex-1">
-                A discription of the user.
-            </div>
+          <div className="flex-1 font-bold">Bio</div>
+          <div className="flex-1">A discription of the user.</div>
         </div>
+        <br />
+        <br />
+        <br />
       </IonContent>
+        <NaviationPanel />
     </IonPage>
   );
 };

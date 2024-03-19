@@ -48,7 +48,8 @@ const App: React.FC = () => (
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/">
-            <Register />
+            {/* <Register /> */}
+            <Profile />
             {/* <Login /> */}
             {/* <PilgrimDetails /> */}
             {/* <Chat /> */}
