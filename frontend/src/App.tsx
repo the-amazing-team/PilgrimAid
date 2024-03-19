@@ -37,6 +37,8 @@ import '@ionic/react/css/display.css';
 
 import Login from './pages/auth/login';
 import Register from './pages/auth/register';
+import PilgrimDetails from './pages/pilgrim/pilgrimDetails';
+import Chat from './pages/chat/chat';
 
 setupIonicReact();
 
@@ -46,7 +48,9 @@ const App: React.FC = () => (
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/">
-            <Register />
+            {/* <Register /> */}
+            <PilgrimDetails />
+            {/* <Chat /> */}
           </Route>
           <Route exact path="/tab1">
             <Tab1 />

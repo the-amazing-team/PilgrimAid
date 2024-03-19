@@ -25,9 +25,9 @@ const Login: React.FC = () => {
           <input
             type="email"
             placeholder="enter email"
-            className="w-11/12 mt-4 outline-none h-8 p-4 rounded-md bg-white border border-gray-300"
+            className="w-11/12 mt-4 outline-none p-6 rounded-md bg-white border border-gray-300"
           />
-          <button className="bg-black w-11/12 p-3 mt-2 rounded-md text-white">
+          <button className="bg-black w-11/12 p-2 mt-2 rounded-md text-white">
             Sign up with email
           </button>
           <div className="flex items-center w-11/12 mt-4">
