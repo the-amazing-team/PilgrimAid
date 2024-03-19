@@ -1,6 +1,7 @@
 import { IonContent, IonPage, IonHeader, IonTitle, IonToolbar} from "@ionic/react";
 import BackArrow from "../../assets/chevron_left_thin.png";
 import PilgrimImg from "../../assets/Carousel.png";
+import NaviationPanel from "../../components/NavigationPanel";
 
 const PilgrimDetails: React.FC = () => {
   return (
@@ -54,6 +55,7 @@ const PilgrimDetails: React.FC = () => {
           </div>
         </div>
       </IonContent>
+      <NaviationPanel />
     </IonPage>
   );
 };
