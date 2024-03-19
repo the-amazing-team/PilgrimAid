@@ -2,6 +2,7 @@ import { IonContent, IonHeader, IonPage, IonToolbar } from "@ionic/react";
 import BackArrow from "../../assets/chevron_left_thin.png";
 import Phone from "../../assets/Phone.png";
 import Video from "../../assets/Video.png";
+import NaviationPanel from "../../components/NavigationPanel";
 
 const Chat: React.FC = () => {
   return (
@@ -49,6 +50,7 @@ const Chat: React.FC = () => {
           </div>
         </div>
       </IonContent>
+      <NaviationPanel />
     </IonPage>
   );
 };

@@ -3,8 +3,16 @@ import BackArrow from "../../assets/chevron_left_thin.png";
 import ProfilePicture from "../../assets/profile.png";
 import NaviationPanel from "../../components/NavigationPanel";
 
+import { useHistory } from "react-router";
+
 
 const Profile: React.FC = () => {
+  const history = useHistory();
+
+  const handleChatClick = () => {
+    history.push("/chat");
+  }
+
   return (
     <IonPage>
       <IonHeader className="mb-4">
@@ -26,7 +34,7 @@ const Profile: React.FC = () => {
               <button className="bg-black w-32 p-2 mt-2 rounded-md text-white">
                 Followers
               </button>
-              <button className="bg-black w-32 p-2 mt-2 rounded-md text-white">
+              <button onClick={handleChatClick} className="bg-black w-32 p-2 mt-2 rounded-md text-white">
                 Chat
               </button>
             </div>

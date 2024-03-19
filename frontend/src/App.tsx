@@ -1,4 +1,4 @@
-import { Redirect, Route } from 'react-router-dom';
+import { Link, Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
   IonIcon,
@@ -39,6 +39,9 @@ import Login from './pages/auth/login';
 import Register from './pages/auth/register';
 import PilgrimDetails from './pages/pilgrim/pilgrimDetails';
 import Chat from './pages/chat/chat';
+import Profile from './pages/account/profile';
+import PilgrimSearch from './pages/pilgrim/pilgrimSearch';
+
 
 setupIonicReact();
 
@@ -48,32 +51,27 @@ const App: React.FC = () => (
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/">
-            {/* <Register /> */}
-            <Profile />
-            {/* <Login /> */}
+            <Register />
+          </Route>
+          <Route exact path="/home">
+            <Profile/>
+          </Route>
+          <Route exact path="/searchPilgrims">
+            <PilgrimSearch />
+          </Route>
+          <Route exact path="/pilgrim/1">
             <PilgrimDetails />
-            {/* <Chat /> */}
           </Route>
-          <Route exact path="/tab1">
-            <Tab1 />
+          <Route exact path="/profile">
+            <Profile />
           </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
+          <Route exact path="/chat">
+          <Chat />
           </Route>
-          <Route path="/tab3">
-            <Tab3 />
-          </Route>
-          <Route path="/profile">
-            <Tab3 />
-          </Route>
-          {/* <Route exact path="/">
-            <Redirect to="/tab1" />
-          </Route> */}
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          {/* <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+          {/* <IonTabButton tab="/" href="/">
+            <IonIcon src={HomeIcon} />
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon aria-hidden="true" icon={ellipse} />
@@ -82,7 +80,10 @@ const App: React.FC = () => (
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon aria-hidden="true" icon={square} />
             <IonLabel>Tab 3</IonLabel>
-          </IonTabButton> */}
+          </IonTabButton>
+          <Link to="/">
+            <img src={HomeIcon} alt="" />
+          </Link> */}
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>

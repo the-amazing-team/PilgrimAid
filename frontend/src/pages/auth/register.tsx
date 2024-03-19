@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+
+
 import { IonContent, IonPage } from "@ionic/react";
 
 import PilgrimLogo from "../../assets/Rectangle 26.png";
 import GoogleLogo from "../../assets/Google.png";
 
 const Login: React.FC = () => {
+    const history = useHistory();
   // State for form fields
   const [formData, setFormData] = useState({
     username: "",
@@ -24,6 +28,8 @@ const Login: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData); // You can perform form submission logic here
+
+    history.push("/home");
   };
 
   return (
