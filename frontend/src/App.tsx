@@ -39,6 +39,7 @@ import Login from './pages/auth/login';
 import Register from './pages/auth/register';
 import PilgrimDetails from './pages/pilgrim/pilgrimDetails';
 import Chat from './pages/chat/chat';
+import PilgrimSearch from './pages/pilgrim/pilgrimSearch';
 
 setupIonicReact();
 
@@ -48,7 +49,8 @@ const App: React.FC = () => (
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/">
-            <Register />
+            {/* <Register /> */}
+            <PilgrimSearch />
             {/* <Login /> */}
             {/* <PilgrimDetails /> */}
             {/* <Chat /> */}
