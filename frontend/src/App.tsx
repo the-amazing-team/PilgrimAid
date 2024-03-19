@@ -38,7 +38,7 @@ import '@ionic/react/css/display.css';
 import Login from './pages/auth/login';
 import Register from './pages/auth/register';
 import PilgrimDetails from './pages/pilgrim/pilgrimDetails';
-import Chat from './pages/chat/chat';
+import Profile from './pages/account/profile';
 
 setupIonicReact();
 
@@ -49,7 +49,8 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           <Route exact path="/">
             {/* <Register /> */}
-            <PilgrimDetails />
+            {/* <PilgrimDetails /> */}
+            <Profile />
             {/* <Chat /> */}
           </Route>
           <Route exact path="/tab1">
@@ -59,6 +60,9 @@ const App: React.FC = () => (
             <Tab2 />
           </Route>
           <Route path="/tab3">
+            <Tab3 />
+          </Route>
+          <Route path="/profile">
             <Tab3 />
           </Route>
           {/* <Route exact path="/">
