@@ -1,8 +1,8 @@
-import HomeIcon from "../../assets/home-bar.png";
-import SearchIcon from "../../assets/search-bar.png";
-import AddIcon from "../../assets/add-button.png";
-import NotificationIcon from "../../assets/notification.png";
-import ProfileIcon from "../../assets/tab-bar-profile-picture.png";
+import HomeIcon from "../assets/home-bar.png";
+import SearchIcon from "../assets/search-bar.png";
+import AddIcon from "../assets/add-button.png";
+import NotificationIcon from "../assets/notification.png";
+import ProfileIcon from "../assets/tab-bar-profile-picture.png";
 
 const NaviationPanel: React.FC = () => {
   return (
